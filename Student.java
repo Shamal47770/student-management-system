@@ -2,7 +2,7 @@ class Student extends Person {
 
     private String course;
 
-    public Student(String name, String id, String course) {
+    public Student(String name, int id, String course) {
         super(name, id);
         this.course = course;
     }
@@ -14,6 +14,8 @@ class Student extends Person {
     public void setCourse(String course) {
         this.course = course;
     }
+
+    
     @Override
     void displayInfo() {
         System.out.println("Student Name: " + getName());
